@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <title>Mom Care</title>
+</head>
+
+<body>
+
+    <!-- ░░░ Navbar ░░░ -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+        <div class="px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div id="logo-wrapper">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="87" height="45" viewBox="0 0 87 45"
+                    fill="none">
+                    <g clip-path="url(#clip0_5247_1297)">
+                        <path
+                            d="M42.6606 26.24H40.4106V25.5369H42.6606C43.0813 25.5369 43.4235 25.1947 43.4235 24.774C43.4235 24.3533 43.0813 24.0111 42.6606 24.0111L37 24.0076V27.5065L37.2804 27.9357C37.6694 28.5314 38.3263 28.8871 39.0378 28.8871H43.8925L46.6482 26.2128C46.875 25.9928 47.0021 25.6976 47.0061 25.3817C47.0101 25.0657 46.8905 24.7674 46.6694 24.5417C46.2291 24.0923 45.5156 24.0674 45.0449 24.4848C45.0449 24.4848 43.7361 25.7896 43.5755 25.9184C43.3246 26.1196 43.0065 26.24 42.6606 26.24ZM44.3861 21.1186H47.1081V21.8217H44.3861C43.9943 21.8217 43.6756 22.1404 43.6756 22.5322C43.6756 22.9224 43.9919 23.2401 44.3816 23.2425H49V20.4129L48.7355 20.0078C48.3695 19.4474 47.7513 19.1128 47.0819 19.1128H43.2642L41.0467 21.144L41.0394 21.1509C40.8239 21.36 40.7031 21.6405 40.6994 21.9407C40.6956 22.2409 40.8092 22.5243 41.0193 22.7388L41.0193 22.7388C41.4376 23.1657 42.1156 23.1895 42.5628 22.7929L42.9769 22.4256C43.0317 21.6957 43.6425 21.1186 44.3861 21.1186Z"
+                            fill="currentColor" class="logo-fill" />
+                        <path
+                            d="M4.968 10.764C5.304 10.764 5.652 10.86 6.012 11.052C6.396 11.22 6.684 11.448 6.876 11.736L15.624 25.2L13.824 25.128L22.788 11.736C23.244 11.088 23.832 10.764 24.552 10.764C25.128 10.764 25.644 10.968 26.1 11.376C26.556 11.784 26.784 12.312 26.784 12.96V33.804C26.784 34.428 26.58 34.956 26.172 35.388C25.764 35.796 25.224 36 24.552 36C23.88 36 23.328 35.796 22.896 35.388C22.488 34.956 22.284 34.428 22.284 33.804V16.848L23.688 17.172L16.344 28.368C16.128 28.632 15.852 28.86 15.516 29.052C15.204 29.244 14.88 29.328 14.544 29.304C14.232 29.328 13.908 29.244 13.572 29.052C13.26 28.86 12.996 28.632 12.78 28.368L5.904 17.496L6.84 15.588V33.804C6.84 34.428 6.648 34.956 6.264 35.388C5.88 35.796 5.376 36 4.752 36C4.152 36 3.66 35.796 3.276 35.388C2.892 34.956 2.7 34.428 2.7 33.804V12.96C2.7 12.36 2.916 11.844 3.348 11.412C3.804 10.98 4.344 10.764 4.968 10.764ZM55.3801 23.4C55.3801 25.2 55.0801 26.88 54.4801 28.44C53.8801 30 53.0281 31.38 51.9241 32.58C50.8441 33.756 49.5481 34.68 48.0361 35.352C46.5481 36.024 44.9161 36.36 43.1401 36.36C41.3641 36.36 39.7321 36.024 38.2441 35.352C36.7561 34.68 35.4601 33.756 34.3561 32.58C33.2761 31.38 32.4361 30 31.8361 28.44C31.2361 26.88 30.9361 25.2 30.9361 23.4C30.9361 21.6 31.2361 19.92 31.8361 18.36C32.4361 16.8 33.2761 15.432 34.3561 14.256C35.4601 13.056 36.7561 12.12 38.2441 11.448C39.7321 10.776 41.3641 10.44 43.1401 10.44C44.9161 10.44 46.5481 10.776 48.0361 11.448C49.5481 12.12 50.8441 13.056 51.9241 14.256C53.0281 15.432 53.8801 16.8 54.4801 18.36C55.0801 19.92 55.3801 21.6 55.3801 23.4ZM50.7001 23.4C50.7001 21.792 50.3761 20.34 49.7281 19.044C49.0801 17.724 48.1921 16.68 47.0641 15.912C45.9361 15.144 44.6281 14.76 43.1401 14.76C41.6521 14.76 40.3441 15.144 39.2161 15.912C38.0881 16.68 37.2001 17.712 36.5521 19.008C35.9281 20.304 35.6161 21.768 35.6161 23.4C35.6161 25.008 35.9281 26.472 36.5521 27.792C37.2001 29.088 38.0881 30.12 39.2161 30.888C40.3441 31.656 41.6521 32.04 43.1401 32.04C44.6281 32.04 45.9361 31.656 47.0641 30.888C48.1921 30.12 49.0801 29.088 49.7281 27.792C50.3761 26.472 50.7001 25.008 50.7001 23.4ZM61.7805 10.764C62.1165 10.764 62.4645 10.86 62.8245 11.052C63.2085 11.22 63.4965 11.448 63.6885 11.736L72.4365 25.2L70.6365 25.128L79.6005 11.736C80.0565 11.088 80.6445 10.764 81.3645 10.764C81.9405 10.764 82.4565 10.968 82.9125 11.376C83.3685 11.784 83.5965 12.312 83.5965 12.96V33.804C83.5965 34.428 83.3925 34.956 82.9845 35.388C82.5765 35.796 82.0365 36 81.3645 36C80.6925 36 80.1405 35.796 79.7085 35.388C79.3005 34.956 79.0965 34.428 79.0965 33.804V16.848L80.5005 17.172L73.1565 28.368C72.9405 28.632 72.6645 28.86 72.3285 29.052C72.0165 29.244 71.6925 29.328 71.3565 29.304C71.0445 29.328 70.7205 29.244 70.3845 29.052C70.0725 28.86 69.8085 28.632 69.5925 28.368L62.7165 17.496L63.6525 15.588V33.804C63.6525 34.428 63.4605 34.956 63.0765 35.388C62.6925 35.796 62.1885 36 61.5645 36C60.9645 36 60.4725 35.796 60.0885 35.388C59.7045 34.956 59.5125 34.428 59.5125 33.804V12.96C59.5125 12.36 59.7285 11.844 60.1605 11.412C60.6165 10.98 61.1565 10.764 61.7805 10.764Z"
+                            fill="currentColor" class="logo-fill" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5247_1297">
+                            <rect width="87" height="45" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-14 transition-colors duration-300"
+                id="nav-links">
+                <a href="/" class="nav-link font-medium hover:text-emerald-800">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-emerald-800 ">About Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800 active">Blog</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Contact Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Service</a>
+                <a href="#" class="signin-button bg-emerald-800 text-white px-5 py-2 hover:bg-emerald-700">Sign
+                    Up</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-emerald-800 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#fff">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <div class="flex flex-col space-y-4">
+                <a href="/" class="nav-link font-medium hover:text-emerald-800">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-emerald-800">About Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Blog</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Contact Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Service</a>
+                <a href="#"
+                    class="signin-button bg-emerald-800 text-white px-5 py-2 hover:bg-emerald-700 text-center">Sign
+                    Up</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ░░░ Hero Section ░░░ -->
+    <section class="">
+        <div class="bg-yellow-200 h-80 p-4 text-center flex flex-col space-y-4 justify-center items-center">
+            <h1 class="text-3xl font-bold">Some Outstanding Articles</h1>
+            <p>Welcome to Empowered Moms, a place dedicated to supporting </p>
+        </div>
+    </section>
+    <section class="my-10 mx-auto">
+        <div class="flex flex-col items-center space-y-6">
+            <p class="text-3xl font-bold">
+                It is all we do
+            </p>
+            <p class="text-gray-500">
+                We provide a range of resources and guidance to support their physical, cognitive, emotional, and social
+                growth.
+            </p>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6">
+            <!-- Testimonial Card 1 -->
+            <div class="flex flex-col sm:flex-row gap-3 border border-gray-200 p-3 bg-white">
+                <div class="flex-1">
+                    <div class="pb-2">
+                        <p class="text-xl text-gray-700 flex flex-row justify-evenly">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <path
+                                    d="M33.8685 25.5141C37.3109 25.214 39.9999 22.8556 39.9999 19.9998C39.9999 17.144 37.3109 14.7856 33.8685 14.4855C32.5339 11.1323 30.0096 8.35829 26.793 6.71135C26.7071 3.04084 23.7156 0 20.0001 0C16.2874 0 13.2931 3.03748 13.2072 6.71143C9.99056 8.35837 7.46628 11.1325 6.13176 14.4856C2.68929 14.7856 0.000244141 17.144 0.000244141 19.9998C0.000244141 22.8559 2.68968 25.2144 6.13246 25.5142C7.24238 28.2961 9.1947 30.7057 11.6755 32.3822C9.66165 33.9658 8.1637 36.0724 7.38034 38.4629C7.17878 39.0779 7.51401 39.7398 8.12901 39.9414C8.744 40.1429 9.40595 39.8077 9.60751 39.1927C10.3472 36.9356 11.8758 34.9832 13.9417 33.6389C17.932 35.4173 22.4495 35.3112 26.2732 33.5404C28.4182 34.8864 30.0016 36.8736 30.7613 39.1927C30.9629 39.8077 31.6247 40.1428 32.2398 39.9414C32.8549 39.7398 33.1901 39.078 32.9886 38.4629C32.1812 35.9989 30.6234 33.8455 28.5232 32.2495C30.8413 30.636 32.7553 28.3181 33.8685 25.5141ZM37.6562 19.9998C37.6562 21.3688 36.3658 22.5697 34.6161 23.0168C35.0234 21.0354 35.0243 18.9685 34.6161 16.983C36.3658 17.43 37.6562 18.6309 37.6562 19.9998ZM20.0001 2.34373C22.2558 2.34373 24.1251 4.05895 24.4143 6.27503C21.6118 6.51589 19.2902 8.45259 18.4958 11.0692C16.759 10.4516 15.547 8.79852 15.547 6.87487C15.547 4.37645 17.5446 2.34373 20.0001 2.34373ZM2.34398 19.9998C2.34398 18.6309 3.63436 17.43 5.38411 16.9829C4.97677 18.9643 4.97591 21.0312 5.38411 23.0167C3.63436 22.5697 2.34398 21.3688 2.34398 19.9998ZM25.7872 31.1707C19.0452 34.6725 10.6551 31.4714 8.06823 23.9893C6.18902 18.3673 8.49807 12.1921 13.6001 9.17071C14.4554 11.5676 16.6157 13.353 19.2818 13.6336C19.9273 13.7015 20.5045 13.2318 20.5703 12.5873C20.8145 10.198 22.9021 8.42415 25.3369 8.60798C31.0646 11.2951 33.9701 17.8913 31.9319 23.9892C30.799 27.2737 28.5248 29.7495 25.7872 31.1707Z"
+                                    fill="#15171A" />
+                                <path
+                                    d="M17.1231 18.6189C17.5807 18.1613 17.5807 17.4193 17.1231 16.9617C15.4439 15.2824 12.7258 15.2822 11.0464 16.9617C10.5887 17.4193 10.5887 18.1613 11.0464 18.6189C11.5039 19.0766 12.246 19.0766 12.7036 18.6189C13.467 17.8556 14.7024 17.8556 15.4657 18.6189C15.9234 19.0765 16.6654 19.0766 17.1231 18.6189Z"
+                                    fill="#15171A" />
+                                <path
+                                    d="M28.9981 16.9617C27.3189 15.2824 24.6008 15.2822 22.9214 16.9617C22.4637 17.4193 22.4637 18.1613 22.9214 18.6189C23.3789 19.0766 24.121 19.0766 24.5786 18.6189C25.342 17.8556 26.5774 17.8556 27.3407 18.6189C27.7983 19.0765 28.5403 19.0767 28.998 18.6189C29.4557 18.1613 29.4557 17.4193 28.9981 16.9617Z"
+                                    fill="#15171A" />
+                                <path
+                                    d="M22.2652 24.7963C21.0163 26.0452 18.9842 26.0452 17.7353 24.7963C17.2777 24.3388 16.5357 24.3387 16.078 24.7963C15.6205 25.254 15.6205 25.9959 16.078 26.4536C18.2408 28.6163 21.7598 28.6163 23.9225 26.4536C24.3802 25.9959 24.3802 25.254 23.9225 24.7963C23.4648 24.3388 22.7229 24.3388 22.2652 24.7963Z"
+                                    fill="#15171A" />
+                            </svg>
+                            <span class="font-bold text-gray-900 px-10">Nurturing Care for Every Child </span>
+                        </p>
+                        <div class="">
+                            At our center, we prioritize creating a warm and loving environment where every child feels
+                            valued and
+                        </div>
+                    </div>
+                    <a class="mt-4 group relative flex items-center bg-transparent border-none cursor-pointer">
+                        <span class="relative font-bold pr-4 pb-[7px] text-sm text-emerald-800 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full 
+               after:bg-[#006045] after:origin-bottom-right after:scale-x-0 
+               after:transition-transform after:duration-300 after:ease-out 
+               group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
+                            Listen now
+                        </span>
+                        <svg class="ml-[2px] transform translate-x-[-8px] transition-all duration-500 -mt-1 ease-in-out 
+           group-hover:translate-x-0 group-hover:ml-0 group-active:scale-90" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="20" viewBox="0 0 46 16">
+                            <path d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)" fill="#006045" />
+                        </svg>
+                    </a>
+                </div>
+                <img loading="lazy" src="./assets/images/service/1.png" alt="Dr. Abu Talal"
+                    class="w-100 sm:w-48 h-48 sm:h-auto object-cover">
+            </div>
+
+            <!-- Testimonial Card 2 -->
+            <div class="flex flex-col sm:flex-row gap-3 border border-gray-200 p-3 bg-white">
+                <div class="flex-1">
+                    <div class="pb-2">
+                        <p class="text-xl text-gray-700 flex flex-row justify-evenly">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <path
+                                    d="M32.3508 8.05617C32.4482 7.67461 32.4219 7.9093 32.4219 2.5C32.4219 1.19156 31.2676 0 30 0H10C8.73242 0 7.57812 1.19156 7.57812 2.5C7.57812 7.93367 7.55109 7.67195 7.64922 8.05617C6.51953 8.70578 5.70312 9.93766 5.70312 11.25V36.25C5.70312 38.2126 7.4532 40 9.375 40H30.625C32.5468 40 34.2969 38.2499 34.2969 36.3281V11.25C34.2969 9.93766 33.4805 8.70578 32.3508 8.05617ZM30.0781 2.50891V7.48367C30.0643 7.51672 30.0167 7.5643 29.9837 7.57812H26.7969V2.34375H29.9552C30.0039 2.37586 30.0673 2.4593 30.0781 2.50891ZM21.1719 7.57812V2.34375H24.4531V7.57812H21.1719ZM15.5469 7.57812V2.34375H18.8281V7.57812H15.5469ZM9.92188 2.50891C9.93273 2.45922 9.99609 2.37586 10.0448 2.34375H13.2031V7.57812H10.0163C9.98328 7.5643 9.9357 7.51672 9.92188 7.48367V2.50891ZM31.9531 36.3281C31.9531 36.9736 31.2705 37.6562 30.625 37.6562H9.375C8.75437 37.6562 8.04688 36.9071 8.04688 36.25V11.25C8.04688 10.6045 8.72953 9.92188 9.375 9.92188H30.625C31.2705 9.92188 31.9531 10.6045 31.9531 11.25V36.3281Z"
+                                    fill="#15171A" />
+                                <path
+                                    d="M26.8741 18.3835C25.2765 17.3782 23.077 17.5298 21.2585 18.5598C21.2269 17.5968 21.0397 16.3346 20.4231 15.1013C20.1337 14.5224 19.4299 14.2875 18.8509 14.5772C18.272 14.8666 18.0374 15.5706 18.3268 16.1494C18.7693 17.0344 18.8976 17.9652 18.9176 18.6631C17.0665 17.5407 14.7754 17.3455 13.1258 18.3835C11.8936 19.1589 11.1401 20.6032 11.0043 22.4503C10.8843 24.0821 11.2797 25.8946 12.0895 27.4232C13.7333 30.5264 17.4737 31.7388 20.0001 30.6892C22.5258 31.7386 26.267 30.5262 27.9106 27.4232C28.7203 25.8946 29.1158 24.0821 28.9958 22.4503C28.8598 20.6032 28.1064 19.1589 26.8741 18.3835ZM25.8394 26.3261C24.6601 28.5524 21.8971 29.1846 20.6241 28.3835C20.2425 28.1435 19.7572 28.1435 19.3758 28.3835C18.1029 29.1845 15.3398 28.5524 14.1604 26.3261C12.971 24.0807 13.0748 21.1847 14.374 20.3672C15.5126 19.6509 17.845 20.1804 19.0335 21.9132C19.4974 22.5894 20.4996 22.5935 20.9663 21.9132C22.1547 20.1806 24.4872 19.6507 25.6258 20.3672C26.9251 21.1847 27.0289 24.0807 25.8394 26.3261Z"
+                                    fill="#15171A" />
+                                <path
+                                    d="M17.854 22.9902C17.2068 22.9902 16.6821 23.5149 16.6821 24.1621V24.7008C16.6821 25.348 17.2068 25.8727 17.854 25.8727C18.5012 25.8727 19.0259 25.348 19.0259 24.7008V24.1621C19.0259 23.5149 18.5012 22.9902 17.854 22.9902Z"
+                                    fill="#15171A" />
+                                <path
+                                    d="M22.1631 22.9902C21.5159 22.9902 20.9912 23.5149 20.9912 24.1621V24.7008C20.9912 25.348 21.5159 25.8727 22.1631 25.8727C22.8103 25.8727 23.335 25.348 23.335 24.7008V24.1621C23.335 23.5149 22.8103 22.9902 22.1631 22.9902Z"
+                                    fill="#15171A" />
+                            </svg>
+                            <span class="font-bold text-gray-900 px-10">Healthy Meals and Snacks Provided</span>
+                        </p>
+                        <div class="">
+                            Nutrition is key to your child’s growth and development. We provide balanced, wholesome meal
+                        </div>
+                    </div>
+                    <a class="mt-4 group relative flex items-center bg-transparent border-none cursor-pointer">
+                        <span class="relative font-bold pr-4 pb-[7px] text-sm text-emerald-800 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full 
+               after:bg-[#006045] after:origin-bottom-right after:scale-x-0 
+               after:transition-transform after:duration-300 after:ease-out 
+               group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
+                            Listen now
+                        </span>
+                        <svg class="ml-[2px] transform translate-x-[-8px] transition-all duration-500 -mt-1 ease-in-out 
+           group-hover:translate-x-0 group-hover:ml-0 group-active:scale-90" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="20" viewBox="0 0 46 16">
+                            <path d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)" fill="#006045" />
+                        </svg>
+                    </a>
+                </div>
+                <img loading="lazy" src="./assets/images/service/2.png" alt="Dr. Abu Talal"
+                    class="w-100 sm:w-48 h-48 sm:h-auto object-cover">
+            </div>
+
+            <!-- Testimonial Card 3 -->
+            <div class="flex flex-col sm:flex-row gap-3 border border-gray-200 p-3 bg-white">
+                <div class="flex-1">
+                    <div class="pb-2">
+                        <p class="text-xl text-gray-700 flex flex-row justify-evenly">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_5334_796)">
+                                    <path
+                                        d="M39.9535 1.49549C40.2059 0.612942 39.388 -0.206175 38.5045 0.0464739C22.6232 4.58978 23.6903 4.28424 23.6445 4.29768C23.4975 4.33986 23.3559 4.41408 23.2373 4.50931C23.1664 4.56619 24.0017 3.7377 0.344522 27.3138C-0.114215 27.7709 -0.114996 28.5143 0.343115 28.9724L11.0276 39.6569C11.4848 40.1142 12.2282 40.115 12.6862 39.6554C36.9702 15.2879 35.5819 16.7708 35.7023 16.3553C35.7666 16.134 39.9508 1.50479 39.9535 1.49549ZM35.3133 3.39716L36.6028 4.68673L33.9977 13.7932L26.2067 6.00224L35.3133 3.39716ZM6.59348 24.3951L23.969 7.07908L27.6293 10.7394L10.2836 28.0851L6.59348 24.3951ZM11.8547 37.1696L2.83031 28.1453L4.93345 26.0494L13.9506 35.0665L11.8547 37.1696ZM15.6049 33.4064L11.9408 29.7423L29.2866 12.3966L32.9209 16.0309L15.6049 33.4064Z"
+                                        fill="#15171A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5334_796">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-bold text-gray-900 px-10">Play-Based Learning Approach</span>
+                        </p>
+                        <div class="">
+                            We believe that children learn best through play. Our curriculum integrates hands-on
+                            activities,
+                        </div>
+                    </div>
+                    <a class="mt-4 group relative flex items-center bg-transparent border-none cursor-pointer">
+                        <span class="relative font-bold pr-4 pb-[7px] text-sm text-emerald-800 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full 
+               after:bg-[#006045] after:origin-bottom-right after:scale-x-0 
+               after:transition-transform after:duration-300 after:ease-out 
+               group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
+                            Listen now
+                        </span>
+                        <svg class="ml-[2px] transform translate-x-[-8px] transition-all duration-500 -mt-1 ease-in-out 
+           group-hover:translate-x-0 group-hover:ml-0 group-active:scale-90" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="20" viewBox="0 0 46 16">
+                            <path d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)" fill="#006045" />
+                        </svg>
+                    </a>
+                </div>
+                <img loading="lazy" src="./assets/images/service/3.png" alt="Dr. Abu Talal"
+                    class="w-100 sm:w-48 h-48 sm:h-auto object-cover">
+            </div>
+
+            <!-- Testimonial Card 4 -->
+            <div class="flex flex-col sm:flex-row gap-3 border border-gray-200 p-3 bg-white">
+                <div class="flex-1">
+                    <div class="pb-2">
+                        <p class="text-xl text-gray-700 flex flex-row justify-evenly">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_5334_820)">
+                                    <path
+                                        d="M33.8649 25.5147C37.3088 25.2158 39.9994 22.8569 39.9994 20.0002C39.9994 17.145 37.3114 14.787 33.87 14.4863C33.2379 12.8961 32.3294 11.4163 31.1715 10.1102V1.17266C31.1715 0.377841 30.3959 -0.186127 29.6402 0.0573034L22.0809 2.49317C20.8051 1.78382 19.2302 1.76413 17.919 2.49317L10.3596 0.0573034C9.60146 -0.186908 8.82835 0.380341 8.82835 1.17266V10.1103C7.688 11.399 6.76787 12.8922 6.13195 14.486C2.68947 14.786 0.000488281 17.1444 0.000488281 20.0002C0.000488281 22.8559 2.68924 25.2142 6.13148 25.5144C7.26496 28.3708 9.22061 30.74 11.6705 32.3864C9.65919 33.9698 8.16306 36.0748 7.38043 38.4629C7.13145 39.2228 7.70058 40 8.49422 40C8.98702 40 9.44576 39.6865 9.60755 39.1927C10.3468 36.9366 11.8749 34.9848 13.94 33.6401C17.8397 35.3704 22.3493 35.3614 26.2696 33.5386C28.4163 34.8845 30.0007 36.8726 30.7609 39.1927C30.9227 39.6866 31.3814 40 31.8742 40C32.6689 40 33.2367 39.2218 32.988 38.4631C32.1799 35.9966 30.6199 33.8415 28.5167 32.2451C30.8979 30.5838 32.7742 28.2473 33.8649 25.5147ZM37.6557 20.0002C37.6557 21.3694 36.3649 22.5704 34.6148 23.0173C35.0092 21.104 35.0379 19.0435 34.615 16.9832C36.365 17.4302 37.6557 18.6311 37.6557 20.0002ZM23.8674 4.37983L28.8278 2.78144V9.03157L24.0946 7.5524C24.418 6.53766 24.3615 5.39699 23.8674 4.37983ZM21.953 6.25064C21.953 6.71781 21.7859 7.15881 21.5026 7.49677C20.7194 8.4394 19.2804 8.43909 18.4975 7.49693C18.2203 7.1667 18.0469 6.7268 18.0469 6.25064C18.0469 5.17372 18.9231 4.29757 20 4.29757C21.077 4.29757 21.953 5.17372 21.953 6.25064ZM11.1721 2.78144L16.1325 4.37983C15.6574 5.35816 15.5689 6.49649 15.9053 7.55247L11.1721 9.03165V2.78144ZM2.34425 20.0002C2.34425 18.6313 3.6346 17.4305 5.38432 16.9834C4.97698 18.9646 4.97612 21.0315 5.38432 23.017C3.6346 22.57 2.34425 21.3692 2.34425 20.0002ZM20 32.578C18.0111 32.578 16.1063 32.1125 14.4067 31.2699C14.3915 31.262 14.3762 31.2543 14.3606 31.2471C7.00802 27.5647 5.10175 17.8704 10.5743 11.6738L17.2839 9.5771C18.866 10.8714 21.134 10.8714 22.7162 9.5771L29.4259 11.6739C31.4611 13.9746 32.5777 16.9148 32.5777 20.0002C32.5777 26.9357 26.9354 32.578 20 32.578Z"
+                                        fill="#15171A" />
+                                    <path
+                                        d="M17.1231 18.6188C17.5808 18.1612 17.5808 17.4193 17.1231 16.9616C15.444 15.2824 12.726 15.2822 11.0466 16.9616C10.589 17.4193 10.589 18.1612 11.0466 18.6188C11.5042 19.0765 12.2462 19.0765 12.7038 18.6188C13.4672 17.8556 14.7025 17.8555 15.4658 18.6188C15.9235 19.0763 16.6654 19.0765 17.1231 18.6188Z"
+                                        fill="#15171A" />
+                                    <path
+                                        d="M28.9979 16.9616C27.3187 15.2824 24.6008 15.2822 22.9214 16.9616C22.4637 17.4193 22.4637 18.1612 22.9214 18.6188C23.3789 19.0765 24.1209 19.0765 24.5786 18.6188C25.3419 17.8556 26.5773 17.8555 27.3406 18.6188C27.7982 19.0764 28.5401 19.0766 28.9978 18.6188C29.4555 18.1613 29.4555 17.4193 28.9979 16.9616Z"
+                                        fill="#15171A" />
+                                    <path
+                                        d="M22.2648 24.7963C21.0159 26.0452 18.9839 26.0452 17.735 24.7963C17.2774 24.3388 16.5354 24.3387 16.0778 24.7963C15.6202 25.254 15.6202 25.9959 16.0778 26.4535C18.2405 28.6161 21.7593 28.6161 23.922 26.4535C24.3797 25.9959 24.3797 25.254 23.922 24.7963C23.4644 24.3388 22.7224 24.3387 22.2648 24.7963Z"
+                                        fill="#15171A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5334_820">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-bold text-gray-900 px-10">Social and Emotional Development</span>
+                        </p>
+                        <div class="">
+                            We focus on building strong social skills and emotional resilience in children. Through
+                            group activities,
+                        </div>
+                    </div>
+                    <a class="mt-4 group relative flex items-center bg-transparent border-none cursor-pointer">
+                        <span class="relative font-bold pr-4 pb-[7px] text-sm text-emerald-800 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full 
+               after:bg-[#006045] after:origin-bottom-right after:scale-x-0 
+               after:transition-transform after:duration-300 after:ease-out 
+               group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
+                            Listen now
+                        </span>
+                        <svg class="ml-[2px] transform translate-x-[-8px] transition-all duration-500 -mt-1 ease-in-out 
+           group-hover:translate-x-0 group-hover:ml-0 group-active:scale-90" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="20" viewBox="0 0 46 16">
+                            <path d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)" fill="#006045" />
+                        </svg>
+                    </a>
+                </div>
+                <img loading="lazy" src="./assets/images/service/4.png" alt="Dr. Abu Talal"
+                    class="w-100 sm:w-48 h-48 sm:h-auto object-cover">
+            </div>
+            <!-- Testimonial Card 5 -->
+            <div class="flex flex-col sm:flex-row gap-3 border border-gray-200 p-3 bg-white">
+                <div class="flex-1">
+                    <div class="pb-2">
+                        <p class="text-xl text-gray-700 flex flex-row justify-evenly">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_5334_847)">
+                                    <path
+                                        d="M39.9613 16.5412C39.986 16.4453 39.9994 16.344 39.9994 16.2495C39.9994 7.13526 33.0744 0 24.9998 0H23.1249C22.6198 0 22.1716 0.323584 22.0127 0.803023L17.279 15.0777H7.11583L5.60564 10.1695C5.02284 8.27562 3.19985 6.95292 1.17233 6.95292C0.52516 6.95292 0.000488281 7.47759 0.000488281 8.12476C0.000488281 8.77193 0.52516 9.2966 1.17233 9.2966C2.16464 9.2966 3.08704 9.95362 3.36555 10.8587C5.30596 17.165 5.37658 17.287 7.34621 22.802C8.06588 24.8172 10.33 26.1711 12.98 26.1711H17.019L15.9249 28.9059C12.5163 28.331 9.45334 30.9724 9.45334 34.374C9.45334 37.4508 11.9448 39.9988 15 39.9988C17.6854 39.9988 19.8948 38.0427 20.4232 35.5458H24.5765C24.7963 36.5846 25.3062 37.5449 26.0675 38.3251C28.2467 40.558 31.7521 40.5587 33.9318 38.3251C34.973 37.2582 35.5464 35.855 35.5464 34.374C35.5464 30.9718 32.4828 28.3312 29.0748 28.9059L27.9807 26.1711H32.0198C34.667 26.1711 36.9289 24.8201 37.6512 22.8086C40.0728 16.2605 39.937 16.6359 39.9613 16.5412ZM23.9709 2.34368H24.9998C31.6192 2.34368 37.0681 7.9561 37.6113 15.0777H19.7482L23.9709 2.34368ZM15 37.6551C13.2638 37.6551 11.797 36.1525 11.797 34.374C11.797 32.6079 13.2339 31.171 15 31.171C16.7662 31.171 18.2031 32.6079 18.2031 34.374C18.2031 36.1525 16.7363 37.6551 15 37.6551ZM33.2026 34.374C33.2026 36.1525 31.7359 37.6551 29.9996 37.6551C28.2633 37.6551 26.7966 36.1525 26.7966 34.374C26.7966 32.6079 28.2335 31.171 29.9996 31.171C31.7657 31.171 33.2026 32.6079 33.2026 34.374ZM26.899 29.777C25.7345 30.565 24.885 31.7837 24.5787 33.2022H20.4211C20.1147 31.7837 19.2652 30.565 18.1008 29.777L19.5433 26.1711H25.4564L26.899 29.777ZM35.4509 22.0014C34.9911 23.2429 33.3639 23.8274 32.0198 23.8274C31.4089 23.8274 13.6609 23.8274 12.98 23.8274C11.3698 23.8274 9.92863 23.0646 9.55333 22.0137L7.91322 17.4214H37.1448L35.4509 22.0014Z"
+                                        fill="#15171A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5334_847">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-bold text-gray-900 px-10">Safe and Stimulating Environment</span>
+                        </p>
+                        <div class="">
+                            Your child’s safety is our top priority. Our facility is equipped with child-proofed spaces,
+                            secure
+                        </div>
+                    </div>
+                    <a class="mt-4 group relative flex items-center bg-transparent border-none cursor-pointer">
+                        <span class="relative font-bold pr-4 pb-[7px] text-sm text-emerald-800 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full 
+               after:bg-[#006045] after:origin-bottom-right after:scale-x-0 
+               after:transition-transform after:duration-300 after:ease-out 
+               group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
+                            Listen now
+                        </span>
+                        <svg class="ml-[2px] transform translate-x-[-8px] transition-all duration-500 -mt-1 ease-in-out 
+           group-hover:translate-x-0 group-hover:ml-0 group-active:scale-90" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="20" viewBox="0 0 46 16">
+                            <path d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)" fill="#006045" />
+                        </svg>
+                    </a>
+                </div>
+                <img loading="lazy" src="./assets/images/service/5.png" alt="Dr. Abu Talal"
+                    class="w-100 sm:w-48 h-48 sm:h-auto object-cover">
+            </div>
+            <!-- Testimonial Card 6 -->
+            <div class="flex flex-col sm:flex-row gap-3 border border-gray-200 p-3 bg-white">
+                <div class="flex-1">
+                    <div class="pb-2">
+                        <p class="text-xl text-gray-700 flex flex-row justify-evenly">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <g clip-path="url(#clip0_5334_871)">
+                                    <path
+                                        d="M21.8771 8.07506H26.6552C27.3023 8.07506 27.8269 7.55044 27.8269 6.90333C27.8269 6.25622 27.3023 5.7316 26.6552 5.7316H24.3797L27.5552 1.92301C28.1898 1.16193 27.6477 0.000976562 26.6552 0.000976562H22.3115C21.6644 0.000976562 21.1398 0.525599 21.1398 1.17271C21.1398 1.81982 21.6644 2.34444 22.3115 2.34444H24.1527L20.9772 6.15303C20.3426 6.91411 20.8846 8.07506 21.8771 8.07506Z"
+                                        fill="#15171A" />
+                                    <path
+                                        d="M31.2455 11.7764H34.3756C35.0227 11.7764 35.5473 11.2518 35.5473 10.6047C35.5473 9.9576 35.0227 9.43298 34.3756 9.43298H33.7585L35.2732 7.62812C35.9113 6.86767 35.3698 5.70312 34.3756 5.70312H31.5301C30.883 5.70312 30.3584 6.22775 30.3584 6.87486C30.3584 7.52196 30.883 8.04659 31.5301 8.04659H31.8626L30.348 9.85144C29.7099 10.6119 30.2513 11.7764 31.2455 11.7764Z"
+                                        fill="#15171A" />
+                                    <path
+                                        d="M29.3763 14.4521C23.5615 14.4521 18.8307 19.1829 18.8307 24.9977C18.8307 26.5725 19.1783 28.0675 19.7998 29.4109C16.3612 29.0526 13.8347 26.0149 14.1247 22.5566C14.2881 20.6077 15.318 18.8689 16.9503 17.7863C17.754 17.2533 17.6034 16.0278 16.6942 15.7054C9.01966 12.9846 0.726849 18.2765 0.0438865 26.4197C-0.53198 33.2869 4.62785 39.3794 11.4955 39.9553C16.3473 40.3625 20.9771 37.8417 23.3641 33.6565C25.0708 34.8451 27.1434 35.5433 29.3763 35.5433C35.2342 35.5433 40 30.8126 40 24.9977C40 19.1829 35.2342 14.4521 29.3763 14.4521ZM11.6914 37.62C6.11595 37.1523 1.91131 32.1937 2.37922 26.6156C2.86245 20.8535 8.12211 16.6766 13.8516 17.4224C11.1485 20.5652 10.9842 25.3566 13.8152 28.7059C15.728 30.9688 18.532 32.0115 21.2838 31.7514C21.3737 31.8589 21.4655 31.9649 21.5595 32.0688C19.7258 35.6801 15.844 37.9675 11.6914 37.62ZM29.3763 33.1998C27.4818 33.1998 25.7356 32.554 24.3455 31.4712C24.4838 31.0617 24.6024 30.642 24.699 30.2126C24.9106 29.2719 23.9538 28.4901 23.0736 28.8876C22.828 28.9985 22.5756 29.0932 22.3183 29.1715C21.5919 27.948 21.1742 26.5208 21.1742 24.9977C21.1742 20.4751 24.8536 16.7956 29.3763 16.7956C33.9421 16.7956 37.6565 20.4751 37.6565 24.9977C37.6565 29.5204 33.9421 33.1998 29.3763 33.1998Z"
+                                        fill="#15171A" />
+                                    <path
+                                        d="M32.4228 23.8266H30.5481V20.6239C30.5481 19.9768 30.0234 19.4521 29.3763 19.4521C28.7292 19.4521 28.2046 19.9768 28.2046 20.6239V24.9983C28.2046 25.6454 28.7292 26.1701 29.3763 26.1701H32.4228C33.0699 26.1701 33.5946 25.6454 33.5946 24.9983C33.5946 24.3512 33.0699 23.8266 32.4228 23.8266Z"
+                                        fill="#15171A" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5334_871">
+                                        <rect width="40" height="40" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="font-bold text-gray-900 px-10">Flexible Hours for Busy Parents</span>
+                        </p>
+                        <div class="">
+                            We understand the demands of modern life, so we offer flexible scheduling options to fit
+                            your needs
+                        </div>
+                    </div>
+                    <a class="mt-4 group relative flex items-center bg-transparent border-none cursor-pointer">
+                        <span class="relative font-bold pr-4 pb-[7px] text-sm text-emerald-800 
+               after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full 
+               after:bg-[#006045] after:origin-bottom-right after:scale-x-0 
+               after:transition-transform after:duration-300 after:ease-out 
+               group-hover:after:scale-x-100 group-hover:after:origin-bottom-left">
+                            Listen now
+                        </span>
+                        <svg class="ml-[2px] transform translate-x-[-8px] transition-all duration-500 -mt-1 ease-in-out 
+           group-hover:translate-x-0 group-hover:ml-0 group-active:scale-90" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="20" viewBox="0 0 46 16">
+                            <path d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                transform="translate(30)" fill="#006045" />
+                        </svg>
+                    </a>
+                </div>
+                <img loading="lazy" src="./assets/images/service/5.png" alt="Dr. Abu Talal"
+                    class="w-100 sm:w-48 h-48 sm:h-auto object-cover">
+            </div>
+        </div>
+    </section>
+    <!-- ░░░ Footer Start ░░░ -->
+    <footer class="bg-gray-950 py-10">
+        <div class="text-white flex flex-row justify-center space-x-5">
+            <p class="border-r-2 pe-4">
+                2023 All Rights Reserved
+            </p>
+            <p class="border-r-2 pe-4">
+                Contact youremail@gmail.com
+            </p>
+            <p>
+                MOM
+            </p>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/output.css">
+    <title>Mom Care</title>
+</head>
+
+<body>
+
+    <!-- ░░░ Navbar ░░░ -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300">
+        <div class="px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div id="logo-wrapper">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="87" height="45" viewBox="0 0 87 45"
+                    fill="none">
+                    <g clip-path="url(#clip0_5247_1297)">
+                        <path
+                            d="M42.6606 26.24H40.4106V25.5369H42.6606C43.0813 25.5369 43.4235 25.1947 43.4235 24.774C43.4235 24.3533 43.0813 24.0111 42.6606 24.0111L37 24.0076V27.5065L37.2804 27.9357C37.6694 28.5314 38.3263 28.8871 39.0378 28.8871H43.8925L46.6482 26.2128C46.875 25.9928 47.0021 25.6976 47.0061 25.3817C47.0101 25.0657 46.8905 24.7674 46.6694 24.5417C46.2291 24.0923 45.5156 24.0674 45.0449 24.4848C45.0449 24.4848 43.7361 25.7896 43.5755 25.9184C43.3246 26.1196 43.0065 26.24 42.6606 26.24ZM44.3861 21.1186H47.1081V21.8217H44.3861C43.9943 21.8217 43.6756 22.1404 43.6756 22.5322C43.6756 22.9224 43.9919 23.2401 44.3816 23.2425H49V20.4129L48.7355 20.0078C48.3695 19.4474 47.7513 19.1128 47.0819 19.1128H43.2642L41.0467 21.144L41.0394 21.1509C40.8239 21.36 40.7031 21.6405 40.6994 21.9407C40.6956 22.2409 40.8092 22.5243 41.0193 22.7388L41.0193 22.7388C41.4376 23.1657 42.1156 23.1895 42.5628 22.7929L42.9769 22.4256C43.0317 21.6957 43.6425 21.1186 44.3861 21.1186Z"
+                            fill="currentColor" class="logo-fill" />
+                        <path
+                            d="M4.968 10.764C5.304 10.764 5.652 10.86 6.012 11.052C6.396 11.22 6.684 11.448 6.876 11.736L15.624 25.2L13.824 25.128L22.788 11.736C23.244 11.088 23.832 10.764 24.552 10.764C25.128 10.764 25.644 10.968 26.1 11.376C26.556 11.784 26.784 12.312 26.784 12.96V33.804C26.784 34.428 26.58 34.956 26.172 35.388C25.764 35.796 25.224 36 24.552 36C23.88 36 23.328 35.796 22.896 35.388C22.488 34.956 22.284 34.428 22.284 33.804V16.848L23.688 17.172L16.344 28.368C16.128 28.632 15.852 28.86 15.516 29.052C15.204 29.244 14.88 29.328 14.544 29.304C14.232 29.328 13.908 29.244 13.572 29.052C13.26 28.86 12.996 28.632 12.78 28.368L5.904 17.496L6.84 15.588V33.804C6.84 34.428 6.648 34.956 6.264 35.388C5.88 35.796 5.376 36 4.752 36C4.152 36 3.66 35.796 3.276 35.388C2.892 34.956 2.7 34.428 2.7 33.804V12.96C2.7 12.36 2.916 11.844 3.348 11.412C3.804 10.98 4.344 10.764 4.968 10.764ZM55.3801 23.4C55.3801 25.2 55.0801 26.88 54.4801 28.44C53.8801 30 53.0281 31.38 51.9241 32.58C50.8441 33.756 49.5481 34.68 48.0361 35.352C46.5481 36.024 44.9161 36.36 43.1401 36.36C41.3641 36.36 39.7321 36.024 38.2441 35.352C36.7561 34.68 35.4601 33.756 34.3561 32.58C33.2761 31.38 32.4361 30 31.8361 28.44C31.2361 26.88 30.9361 25.2 30.9361 23.4C30.9361 21.6 31.2361 19.92 31.8361 18.36C32.4361 16.8 33.2761 15.432 34.3561 14.256C35.4601 13.056 36.7561 12.12 38.2441 11.448C39.7321 10.776 41.3641 10.44 43.1401 10.44C44.9161 10.44 46.5481 10.776 48.0361 11.448C49.5481 12.12 50.8441 13.056 51.9241 14.256C53.0281 15.432 53.8801 16.8 54.4801 18.36C55.0801 19.92 55.3801 21.6 55.3801 23.4ZM50.7001 23.4C50.7001 21.792 50.3761 20.34 49.7281 19.044C49.0801 17.724 48.1921 16.68 47.0641 15.912C45.9361 15.144 44.6281 14.76 43.1401 14.76C41.6521 14.76 40.3441 15.144 39.2161 15.912C38.0881 16.68 37.2001 17.712 36.5521 19.008C35.9281 20.304 35.6161 21.768 35.6161 23.4C35.6161 25.008 35.9281 26.472 36.5521 27.792C37.2001 29.088 38.0881 30.12 39.2161 30.888C40.3441 31.656 41.6521 32.04 43.1401 32.04C44.6281 32.04 45.9361 31.656 47.0641 30.888C48.1921 30.12 49.0801 29.088 49.7281 27.792C50.3761 26.472 50.7001 25.008 50.7001 23.4ZM61.7805 10.764C62.1165 10.764 62.4645 10.86 62.8245 11.052C63.2085 11.22 63.4965 11.448 63.6885 11.736L72.4365 25.2L70.6365 25.128L79.6005 11.736C80.0565 11.088 80.6445 10.764 81.3645 10.764C81.9405 10.764 82.4565 10.968 82.9125 11.376C83.3685 11.784 83.5965 12.312 83.5965 12.96V33.804C83.5965 34.428 83.3925 34.956 82.9845 35.388C82.5765 35.796 82.0365 36 81.3645 36C80.6925 36 80.1405 35.796 79.7085 35.388C79.3005 34.956 79.0965 34.428 79.0965 33.804V16.848L80.5005 17.172L73.1565 28.368C72.9405 28.632 72.6645 28.86 72.3285 29.052C72.0165 29.244 71.6925 29.328 71.3565 29.304C71.0445 29.328 70.7205 29.244 70.3845 29.052C70.0725 28.86 69.8085 28.632 69.5925 28.368L62.7165 17.496L63.6525 15.588V33.804C63.6525 34.428 63.4605 34.956 63.0765 35.388C62.6925 35.796 62.1885 36 61.5645 36C60.9645 36 60.4725 35.796 60.0885 35.388C59.7045 34.956 59.5125 34.428 59.5125 33.804V12.96C59.5125 12.36 59.7285 11.844 60.1605 11.412C60.6165 10.98 61.1565 10.764 61.7805 10.764Z"
+                            fill="currentColor" class="logo-fill" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_5247_1297">
+                            <rect width="87" height="45" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-6 lg:space-x-14 transition-colors duration-300"
+                id="nav-links">
+                <a href="/" class="nav-link font-medium hover:text-emerald-800">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-emerald-800 ">About Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800 active">Blog</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Contact Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Service</a>
+                <a href="#" class="signin-button bg-emerald-800 text-white px-5 py-2 hover:bg-emerald-700">Sign
+                    Up</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-700 hover:text-emerald-800 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#fff">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <div class="flex flex-col space-y-4">
+                <a href="/" class="nav-link font-medium hover:text-emerald-800">Home</a>
+                <a href="about.html" class="nav-link font-medium hover:text-emerald-800">About Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Blog</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Contact Us</a>
+                <a href="#" class="nav-link font-medium hover:text-emerald-800">Service</a>
+                <a href="#"
+                    class="signin-button bg-emerald-800 text-white px-5 py-2 hover:bg-emerald-700 text-center">Sign
+                    Up</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ░░░ Hero Section ░░░ -->
+    <section class="">
+        <div class="bg-yellow-200 h-80 p-4 text-center flex flex-col space-y-4 justify-center items-center">
+            <h1 class="text-3xl font-bold">Some Outstanding Articles</h1>
+            <p>Welcome to Empowered Moms, a place dedicated to supporting </p>
+        </div>
+    </section>
+    <div class="mx-20 my-10 p-6 bg-white">
+        <div
+            class="flex flex-col md:flex-row items-center justify-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
+            <img src="./assets/images/team/1.png" alt="Dr. Emily Hart" class="w-100 object-cover">
+            <div class="pt-4">
+                <h1 class="text-2xl font-bold text-gray-800">Dr. Emily Hart</h1>
+                <p class="text-gray-600">Volunteer</p>
+                <p class="text-gray-600">Provides expert care, guidance, and nurturing support for children to help them
+                    grow, thrive, and achieve developmental milestones in a safe and loving environment...About Dr.
+                    Emily Hart</p>
+                <div class="contact-info flex flex-col space-y-4">
+                    <div class="flex flex-row gap-4 items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" class="mt-1.5"
+                            viewBox="0 0 14 14" fill="none">
+                            <g clip-path="url(#clip0_5318_904)">
+                                <path
+                                    d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"
+                                    fill="#00715D" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5318_904">
+                                    <rect width="14" height="14" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div>
+                            <span class="text-sm font-bold text-gray-700">Phone</span>
+                            <p class="text-sm text-gray-600">+44 545 969 626</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-4 items-start">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" class="mt-1.5"
+                            viewBox="0 0 14 12" fill="none">
+                            <path
+                                d="M7.40496 7.76897C7.27273 7.85161 7.12397 7.88467 6.99174 7.88467C6.8595 7.88467 6.71074 7.85161 6.57851 7.76897L0 3.75243V9.09128C0 10.2318 0.92562 11.1574 2.06612 11.1574H11.9339C13.0744 11.1574 14 10.2318 14 9.09128V3.75243L7.40496 7.76897Z"
+                                fill="#00715D" />
+                            <path
+                                d="M11.9339 0.84375H2.06614C1.09093 0.84375 0.264487 1.53796 0.0661396 2.46359L7.00829 6.69499L13.9339 2.46359C13.7356 1.53796 12.9091 0.84375 11.9339 0.84375Z"
+                                fill="#00715D" />
+                        </svg>
+                        <div><span class="text-sm font-bold text-gray-700">Email</span>
+                            <p class="text-sm text-gray-600">Example@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-800">About Dr. Emily Hart</h2>
+            <p class="text-gray-600 mt-2">
+                Dr. Emily Hart has dedicated her career to supporting families and fostering the physical, emotional,
+                and cognitive development of children with years of experience in childcare, compassion, and a
+                personalized understanding of each child’s needs.
+            </p>
+        </div>
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-800">Key Focus Areas</h2>
+            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-2">
+                <li>Enhance well-being in children’s health, providing advice on nutrition, hygiene, and exercise.</li>
+                <li>Early Development - through hands-on activities and play, Dr. Hart helps build kids’ skills such as
+                    motor development.</li>
+                <li>Support learning foundations while boosting creativity and curiosity.</li>
+            </ul>
+        </div>
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold text-gray-800">Contact Dr. Emily Hart</h2>
+            <p class="text-gray-600 mt-2">Stay connected with Dr. Hart for expert advice, reviews, or personalized
+                childcare plans. Learn About Our Services!</p>
+        </div>
+    </div>
+    <div class="w-full py-10">
+        <div class="flex flex-col md:flex-row space-x-4">
+            <!-- Image Section -->
+            <div class="w-full md:w-1/3">
+                <img src="./assets/images/about/3.png" alt="Father and child" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Content Section -->
+            <div class="w-full md:w-1/1 bg-emerald-800 text-white p-6 flex flex-col justify-center">
+                <h2 class="text-xl md:text-2xl font-semibold mb-2">
+                    Are You Ready to Explore More?
+                </h2>
+                <p class="text-sm md:text-base mb-4">
+                    Don’t miss out on more creative ideas, parenting tips, and fun activities! Stay connected with us
+                    for the latest updates and exclusive offers.
+                </p>
+                <a href="#"
+                    class="inline-block bg-yellow-200 text-black font-semibold px-5 py-2 hover:bg-yellow-100 transition duration-200 w-fit">
+                    Join Our Community →
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ░░░ Footer Start ░░░ -->
+    <footer class="bg-gray-950 py-10">
+        <div class="text-white flex flex-row justify-center space-x-5">
+            <p class="border-r-2 pe-4">
+                2023 All Rights Reserved
+            </p>
+            <p class="border-r-2 pe-4">
+                Contact youremail@gmail.com
+            </p>
+            <p>
+                MOM
+            </p>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
